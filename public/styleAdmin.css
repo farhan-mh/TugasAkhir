@@ -1,0 +1,63 @@
+.bagian_navbar,
+.panah-navbar2 {
+    display: none;
+}
+#Adminn1:checked ~  .bagian_navbar,
+#Adminn1:checked ~ .col-sm-12 .panah-navbar2 {
+    display: block;
+}
+#Adminn1:checked ~ .col-sm-12 .panah-navbar {
+    display: none;
+}
+/*  */
+.bagian_dropdown,
+.panah-dropdown2 {
+    display: none;
+}
+#Adminn2:checked ~ .bagian_dropdown,
+#Adminn2:checked ~ .col-sm-12 .panah-dropdown2 {
+    display: block;
+}
+#Adminn2:checked ~ .col-sm-12 .panah-dropdown {
+    display: none;
+}
+/*  */
+.bagian_berita,
+.panah-berita2 {
+    display: none;
+}
+#Adminn3:checked ~  .bagian_berita,
+#Adminn3:checked ~ .col-sm-12 .panah-berita2 {
+    display: block;
+}
+#Adminn3:checked ~ .col-sm-12 .panah-berita {
+    display: none;
+}
+/*  */
+.bagian_footer,
+.panah-footer2 {
+    display: none;
+}
+#Adminn4:checked ~ .bagian_footer,
+#Adminn4:checked ~ .col-sm-12 .panah-footer2 {
+    display: block;
+}
+#Adminn4:checked ~ .col-sm-12 .panah-footer {
+    display: none;
+}
+/*  */
+.tambahhh .panah-tambah2,  .bagian_tambah {
+    display: none;
+}
+#TambahK:checked ~ .bagian_tambah,
+#TambahK:checked ~  .tambahhh .panah-tambah2 {
+    display: block;
+}
+#TambahK:checked ~ .tambahhh .panah-tambah {
+    display: none;
+}
+/*  */
+.Nama-list{
+    font-family:supercell-magic; 
+    width:30%
+}
