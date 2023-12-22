@@ -299,6 +299,7 @@
           <th>teks</th>
           <th>svg</th>
           <th>link</th>
+          <th>copyRight</th>
           <th>background</th>
         </tr>
         @forelse($footer as $ftr)
@@ -318,6 +319,7 @@
             <input type="file" name="svgFooter3[]" id="" class="form-control">
             <img src="{{ asset('storage/svgUp/'.$ftr->svg3) }}"  width="26" height="26" alt="SVG Image">
           </td>
+         
           <td>
           <h6 for="" class="text-secondary mt-4">Link 1</h6>
             <input type="text" name="linkFooter[]" value="{{ $ftr->link }}">
@@ -328,6 +330,7 @@
             <h6 for="" class="text-secondary mt-4">Link 3</h6>
             <input type="text" name="linkFooter3[]" value="{{ $ftr->link3 }}">
           </td>
+          <td><input type="text" name="copyRight[]" value="{{ $ftr->copyright }}"></td>
           <td><input type="color" name="bgFooter[]" class="form-control" value="{{ $ftr->warnaBg }}" id=""  title="warna default: 58, 71, 83"></td>
         </tr>
         @empty

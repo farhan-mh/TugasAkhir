@@ -13,7 +13,9 @@
       <img src="{{ asset('/storage/posts/'.$posts->image) }}" alt=""  class=" img-di-view rounded mt-2 mx-4" style="">  
       <article class="mt-4">
       {!! $posts->content!!}
+     
       </article>
+     
     </div>
     <div class="">
    

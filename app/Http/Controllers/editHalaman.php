@@ -128,6 +128,7 @@ $validatedData = $request->validate([
     'svgFooter.*' => 'file|mimes:svg|max:2048', // Menentukan bahwa file harus berekstensi .svg, maksimal ukuran 2MB (2048 KB)
     'svgFooter2.*' => 'file|mimes:svg|max:2048',
     'svgFooter3.*' => 'file|mimes:svg|max:2048',
+    'copyRight.*' => 'required',
     'linkFooter.*'=> 'required',
     'linkFooter2.*' => 'required',
     'linkFooter3.*'=> 'required',
@@ -202,7 +203,8 @@ foreach($tesid4 as $key4 => $idf){
         'warnaBg' => $request->input('bgFooter.' . $key4),
         'link' => $request->input('linkFooter.' . $key4),
         'link2' => $request->input('linkFooter2.' . $key4),
-        'link3' => $request->input('linkFooter3.' . $key4)
+        'link3' => $request->input('linkFooter3.' . $key4),
+        'copyright' => $request->input('copyRight.' . $key4),
     ];
     
     $ambilFooter = footerModel::find($idf);

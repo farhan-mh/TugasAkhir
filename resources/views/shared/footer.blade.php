@@ -24,7 +24,7 @@
           {!! $ftr->teksFooter !!}
         </h6>
         <hr>
-        <span class="spn-footer" style="color:white float:right;">Copyright &copy   :v</b><br>
+        <span class="spn-footer" style="color:white float:right;">Copyright &copy  {{ $ftr->copyright }}</b><br>
     </div>
     @empty
     @endforelse

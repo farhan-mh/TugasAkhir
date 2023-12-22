@@ -32,16 +32,25 @@
                 </div>
 
                 <div class="col-md-5 ">
-                  <h5 class="text-warning">Judul  :</h5><span class="card-subtitle mb-2 text-muted">
+                  <h5 class="text-warning">Judul  :</h5>
+                  <span class="card-subtitle mb-2 text-muted">
                     <h5>{{ $posts->title }}</h5>
                   </span>
                   <h5 class="text-warning">Kategori  :</h5>
                   <span class="card-subtitle mb-2 text-muted">
+                    <h5>{{ $posts->kategori }} </h5>
+                  </span>
+                  <h5 class="text-warning">create  :</h5>
+                  <span class="card-subtitle mb-2 text-muted">
+                    <h5>{{ $posts->created_at }}</h5>
+                  </span>
+                  <h5 class="text-warning">update  :</h5>
+                  <span class="card-subtitle mb-2 text-muted">
                     <h5>
-                      <?php if(isset( $posts->kategori )){
-                          echo "$posts->kategori";
+                    <?php if(isset( $posts->updated_at )){
+                          echo "$posts->updated_at";
                          }else{
-                          echo "<span class='text-danger'> tisak ada kategori</span>";
+                          echo "<span class='text-danger'> Belum Pernah Di Update</span>";
                          }
                        ?>
                     </h5>
