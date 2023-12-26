@@ -13,9 +13,10 @@
   </div>
   <!-- <input type="checkbox" name="" id="f"> -->
   <!-- /ke atas -->
-    <footer class="footer col-12" style="z-index: 10;">
+  @forelse($footer as $ftr)
+  <!-- background-color: #3a4753; -->
+    <footer class="footer col-12" style="z-index: 10;background-color: {{ $ftr->warnaBg }};">
         <div class="d1 text-light row" >
-        @forelse($footer as $ftr)
       <div class="txt col-xl-6 col-12 col-sm-6 text-lg-start text-sm-start p-sm-1 p-3">
       <h6 class="">
            
